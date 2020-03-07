@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter = 2+ _counter;
+      _counter = 2 + _counter;
     });
   }
 
@@ -74,14 +74,74 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-          child: Center(
-            child: Container(
-              margin: const EdgeInsets.all(10.0),
-              color: Colors.amber[500],
-              width: 48.0,
-              height: 48.0,
-            ),
+        child: Center(
+          child: Wrap(
+            spacing: 8.0, // gap between adjacent chips
+            runSpacing: 4.0, // gap between lines
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    color: Colors.purple[600],
+                    width: 48.0,
+                    height: 48.0,
+                  ),
+                ],
+              ),
+            ],
           ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
